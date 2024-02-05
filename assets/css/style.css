@@ -6,16 +6,25 @@
 
 :root {
     --bg-color-header: #000;
-    --bg-color-area: #B28756;
+    --bg-color-area-one: #B28756;
+    --bg-color-area-two: #FFFFFF;
 
-    --color-area:#FFFFFF;
+    --color-area-text:#FFFFFF;
+
+    --border-color-one:#B28756;
+    --border-color-two:#000;
 }
 
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
 
 header {
     height: 100px;
     background: var(--bg-color-header);
-    color: var(--color-area);
+    color: var(--color-area-text);
 }
 
 .header{
@@ -30,14 +39,40 @@ header {
     width: 100px;
 }
 
+.logoimg{
+    width: 80px;
+    height: 80px;
+    background: var(--bg-color-area-one);
+}
+
 .menu{
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
 
-.logoimg{
-    width: 80px;
-    height: 80px;
-    background: var(--bg-color-area);
+.menu ul, .menu li{
+    list-style: none;
 }
+
+.menu ul{
+    display: flex;
+}
+
+.menu li a{
+    color: var(--color-area-text);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left:10px ;
+    padding-right: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid var(--border-color-two);
+}
+
+.menu li a:hover, .menu .active a{
+    border-bottom: 5px solid var(--border-color-one);
+}
+
