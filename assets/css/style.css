@@ -8,7 +8,9 @@
     --bg-color-header: #000;
     --bg-color-area-one: #B28756;
     --bg-color-area-two: #FFFFFF;
+    --bg-color-area-three:#333;
 
+    --color-area: #CCC;
     --color-area-text:#FFFFFF;
 
     --border-color-one:#B28756;
@@ -74,5 +76,14 @@ header {
 
 .menu li a:hover, .menu .active a{
     border-bottom: 5px solid var(--border-color-one);
+    color: var(--color-area);
 }
 
+
+.banner{
+    height: calc(100vh - 100px);
+    background: var(--bg-color-area-three);
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
