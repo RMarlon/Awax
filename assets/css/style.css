@@ -1,0 +1,22 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --bg-color-header: #000;
+}
+
+body {}
+
+header {
+    height: 100px;
+    background: var(--bg-color-header);
+}
+
+.header{
+    max-width: 1140px;
+    height: 100px;
+    background: red;
+    margin: auto;
+}
