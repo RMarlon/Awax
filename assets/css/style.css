@@ -139,3 +139,26 @@ header {
     background: var(--bg-color-area-one);
     color: var(--color-area-text-one);
 }
+
+.banner .sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    margin-top: -50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .pointer{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius:8px ;
+    border: 2px solid var(--border-color-one);
+}
+
+.banner .pointer .active{
+    background: var(--bg-color-area-one);
+}
