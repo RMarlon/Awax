@@ -9,10 +9,13 @@
     --bg-color-area-one: #B28756;
     --bg-color-area-two: #FFFFFF;
     --bg-color-area-three:#333;
+    --bg-color-area-four: #F7F7F7F7;
+    --bg-color-area-five:#000;
 
     --color-area: #CCC;
     --color-area-text-one:#FFFFFF;
     --color-area-text-two:#B28756;
+    --color-area-text-four: #000;
 
     --border-color-one:#B28756;
     --border-color-two:#000;
@@ -21,6 +24,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
     font-size: 13px;
 }
 
@@ -159,6 +163,49 @@ header {
     border: 2px solid var(--border-color-one);
 }
 
-.banner .pointer .active{
+.banner .pointer.active{
     background: var(--bg-color-area-one);
+}
+
+.default{
+    padding: 50px 0px;
+}
+
+.default .section-title, .default .section-desc{
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.default .section-title{
+    font-size: 20px;
+}
+
+.default .section-desc{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: var(--color-area);
+}
+
+.default .section-body{
+    max-width: 1140px;
+    background: #CCC;
+    margin: auto;
+}
+
+.default.light{
+    background: var(--bg-color-area-four);
+}
+
+.default.light .section-title{
+    color: var(--color-area-text-four);
+}
+
+.default.dark{
+    background: var(--bg-color-area-five);
+}
+
+.default.dark .section-title{
+    color: var(--color-area-text-one);
 }
