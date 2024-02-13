@@ -11,16 +11,22 @@
     --bg-color-area-three:#333;
     --bg-color-area-four: #F7F7F7F7;
     --bg-color-area-five:#000;
+    --bg-color-area-six:#999;
+    --bg-color-area-seven: #EEE;
 
     --color-area: #CCC;
     --color-area-text-one:#FFFFFF;
     --color-area-text-two:#B28756;
     --color-area-text-four: #000;
     --color-area-text-five:#999;
+    --color-area-text-six: #555;
 
     --border-color-one:#B28756;
     --border-color-two:#000;
     --border-color-three: #333;
+    --border-color-four: #999;
+    --border-color-five: #CCC;
+    --border-color-six: #EEE;
 
     --box-shadow-color-one: #333;
 }
@@ -266,4 +272,40 @@ espacifese css area
     margin-top: 10px;
     font-size: 13px;
     color: var(--color-area-text-five);
+}
+
+.section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects--filters{
+    border: 1px solid var(--border-color-five);
+    background: var(--bg-color-area-seven);
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.section-projects--filters ul, .section-projects--filters li{
+    list-style: none;
+}
+
+.section-projects--filters li{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px;
+    color: var(--color-area-text-six);
+    border-left: 1px solid var(--border-color-five);
+    border-bottom: 3px solid var(--border-color-six);
+    cursor: pointer;
+}
+
+.section-projects--filters li:hover, .section-projects--filters li.active{
+    border-bottom: 3px solid var(--border-color-one);
+}
+.section-projects--filters li:first-child{
+    border-left: 0;
 }
