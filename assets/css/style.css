@@ -306,6 +306,52 @@ espacifese css area
 .section-projects--filters li:hover, .section-projects--filters li.active{
     border-bottom: 3px solid var(--border-color-one);
 }
+
 .section-projects--filters li:first-child{
     border-left: 0;
+}
+
+.section-projects--photos{
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects--photo{
+    width: 280px;
+}
+
+.section-projects--photoarea{
+    width: 260px;
+    height: 160px;
+    margin: 10px;
+}
+
+.section-projects--photoarea img{
+    width: inherit;
+    height: inherit;
+}
+
+.section-projects--photoinfo{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-area-text-one);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.section-projects--photoinfo h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo{
+    display: flex;
 }
