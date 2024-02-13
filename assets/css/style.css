@@ -16,9 +16,11 @@
     --color-area-text-one:#FFFFFF;
     --color-area-text-two:#B28756;
     --color-area-text-four: #000;
+    --color-area-text-five:#999;
 
     --border-color-one:#B28756;
     --border-color-two:#000;
+    --border-color-three: #333;
 
     --box-shadow-color-one: #333;
 }
@@ -237,4 +239,31 @@ espacifese css area
 .section-aboutus--right img{
     width: 480px;
     box-shadow: 0 5px 10px var(--box-shadow-color-one);
+}
+
+.section-services{
+    display: flex;
+}
+
+.section-service{
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    border-right:1px solid var(--border-color-three);
+}
+
+.section-service:first-child{
+    border-left:1px solid var(--border-color-three);
+}
+
+.section-service h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.section-service p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--color-area-text-five);
 }
