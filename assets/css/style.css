@@ -19,6 +19,8 @@
 
     --border-color-one:#B28756;
     --border-color-two:#000;
+
+    --box-shadow-color-one: #333;
 }
 
 
@@ -85,6 +87,18 @@ header {
     color: var(--color-area);
 }
 
+.button{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: var(--bg-color-area-one);
+    color: var(--color-area-text-one);
+}
 
 .banner{
     height: calc(100vh - 100px);
@@ -131,18 +145,6 @@ header {
     margin-top: 20px;
 }
 
-.banner a{
-    display: block;
-    font-size: 12px;
-    font-weight: 600;
-    margin-top: 30px;
-    padding: 10px 30px;
-    border-radius: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: var(--bg-color-area-one);
-    color: var(--color-area-text-one);
-}
 
 .banner .sliders-pointers{
     width: 100vw;
@@ -190,7 +192,6 @@ header {
 
 .default .section-body{
     max-width: 1140px;
-    background: #CCC;
     margin: auto;
 }
 
@@ -198,7 +199,7 @@ header {
     background: var(--bg-color-area-four);
 }
 
-.default.light .section-title{
+.default.light .section-title, .default.light .section-body{
     color: var(--color-area-text-four);
 }
 
@@ -206,6 +207,34 @@ header {
     background: var(--bg-color-area-five);
 }
 
-.default.dark .section-title{
+.default.dark .section-title, .default.dark .section-body{
     color: var(--color-area-text-one);
+}
+
+
+/* 
+espacifese css area  
+*/
+
+.section-aboutus{
+    display: flex;
+}
+
+.section-aboutus--left{
+    flex: 1;
+}
+
+.section-aboutus--left p{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.section-aboutus--right{
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--right img{
+    width: 480px;
+    box-shadow: 0 5px 10px var(--box-shadow-color-one);
 }
