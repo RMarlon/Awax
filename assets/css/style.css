@@ -13,6 +13,7 @@
     --bg-color-area-five:#000;
     --bg-color-area-six:#999;
     --bg-color-area-seven: #EEE;
+    --bgcolor-area-eight:#CCC;
 
     --color-area: #CCC;
     --color-area-text-one:#FFFFFF;
@@ -203,6 +204,7 @@ header {
     margin: auto;
 }
 
+
 .default.light{
     background: var(--bg-color-area-four);
 }
@@ -354,4 +356,105 @@ espacifese css area
 
 .section-projects--photoarea:hover .section-projects--photoinfo{
     display: flex;
+}
+
+#bg-team{
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0%;
+}
+
+.section-team-area{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.section-team{
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.section-team .sliders{
+    width: 1000vw;
+    height: 100%;
+}
+
+.section-team .slide{
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    margin-right: 20px;
+    display: inline-block;
+    background: var(--bg-color-area-two);
+}
+
+.section-team .slidearea{
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--color-area-text-four);
+}
+
+.section-team-area .sliders-pointers{
+    height: 20px;
+    margin-top: 30PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-team-area .pointer{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius:8px ;
+    border: 2px solid var(--border-color-one);
+}
+
+.section-team-area .pointer.active{
+    background: var(--bg-color-area-one);
+}
+
+.section-team--avatar{
+    width: 150px;
+    height: auto;
+}
+.section-team--name{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.section-team--role{
+    font-size: 14px;
+    color: var(--color-area-text-five);
+    margin-top: 5px;
+}
+
+.section-team--social{
+    display: flex;
+    margin-top: 20px;
+}
+
+.section-team--social a{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:13px ;
+    background: var(--bgcolor-area-eight);
+}
+
+.section-team--social a:hover{
+    background: var(--bg-color-area-one);
 }
