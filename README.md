@@ -5,13 +5,11 @@
 🎓 Project made with the academic objective.
 </p>
 
-<h1> 
-See the site </br>
-    <a href=""> 
-        <img src="media/Responsive.jpg">
-    </a>
+<h1> <a href="https://rmarlon.github.io/Awax/"> See the site 🖥️ </a></h1>
 
-</h1>
+📱
+
+<a href="https://rmarlon.github.io/Awax/"> <img src="media/Responsive.jpg"> </a>
 
 ## Tools used 🛠️
 
