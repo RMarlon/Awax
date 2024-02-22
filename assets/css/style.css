@@ -1153,6 +1153,56 @@ espacifese css area
         max-width: 280px;
     }
 
+    .section-companies--area{
+        flex-direction: column;
+    }
+
+    .section-company{
+        margin: 20px 0;
+    }
+
+    .section-price{
+        flex-direction: column;
+    }
+
+    .section-price--item{
+        margin-bottom: 20px;
+    }
+
+    
+    .section-premium--left{
+        padding: 0 20px;
+    }
+
+    .section-premium--left img{
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .section-premium--item div{
+        font-size: 12px;
+    }
+
+    .section-premium--item h4{
+        font-size: 15px;
+    }
+
+    .section-facts{
+        flex-direction: column;
+    }
+
+    .section-share{
+        flex-direction: column;
+    }
+
+    .section-share--item{
+        margin-top: 20px;
+    }
+
+    .section-contact{
+        width: 100%;
+        max-width: 350px;
+    }
     .section-map {
         padding: 0%;
         padding-bottom: 250px;
