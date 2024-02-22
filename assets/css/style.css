@@ -883,8 +883,6 @@ espacifese css area
     background: var(--bg-color-area-five);
 }
 
-.footer--item.area1 {}
-
 .footer-social {
     display: flex;
     align-items: center;
